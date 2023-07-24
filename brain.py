@@ -25,11 +25,11 @@ import seaborn as sn
 import numpy as np
 import pathlib
 
-train = pathlib.Path("C:\\Users\\Nidhi\\Desktop\\brain\\train")
-test = pathlib.Path("C:\\Users\\Nidhi\\Desktop\\brain\\test")
+train = pathlib.Path("C:\\Users\\Nidhi\\Desktop\\Projects\\brain\\train")
+test = pathlib.Path("C:\\Users\\Nidhi\\Desktop\\Projects\\brain\\test")
 
-image_count_train = len(list(train_dir.glob('*/*.jpg')))
-image_count_test = len(list(test_dir.glob('*/*.jpg')))
+image_count_train = len(list(train.glob('*/*.jpg')))
+image_count_test = len(list(test.glob('*/*.jpg')))
 print("Train Image Count: {} \n Test Image Count: {}".format(image_count_train,image_count_test))
 
 batch_size = 32
@@ -179,7 +179,7 @@ def proccess1(df):
   return df_test1
 
 
-fullpath = 'C:\\Users\\Nidhi\\Desktop\\brain\\test'
+fullpath = 'C:\\Users\\Nidhi\\Desktop\\Projects\\brain\\test'
 path = "test"
 
 df_test = list_files(fullpath, path)
